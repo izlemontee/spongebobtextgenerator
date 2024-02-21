@@ -1,0 +1,6 @@
+<p>Enter your text here:</p>
+<form [formGroup]="textForm">
+    <input type="text" formControlName="text">
+    <button type="submit" (click)="processForm()">Generate</button>
+
+</form>

@@ -1,0 +1,8 @@
+
+<app-headertext (sendHeaderText)="takeHeaderText($event)"></app-headertext>
+<div *ngIf="generatedText != ''">
+    <p>Your generated text is: </p>
+    <p>{{generatedText}}</p>
+    <button [cdkCopyToClipboard]="generatedText">Copy to clipboard</button>
+</div>
+<app-textform (sendNewString)="takeNewString($event)"></app-textform>
